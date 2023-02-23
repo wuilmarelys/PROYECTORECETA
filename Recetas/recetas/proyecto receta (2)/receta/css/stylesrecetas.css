@@ -1,0 +1,117 @@
+-->borrador-->main {
+    width: 100%;
+    height: auto;
+
+}
+
+section {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section>div {
+    width: 300px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.items {
+    border-radius: 15px;
+    width: 280px;
+    display: flex;
+
+
+}
+
+.item2 {
+    background-image: url(https://cuk-it.com/wp-content/uploads/2021/12/thumb04-e1638619205382.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item3 {
+    background-image: url(https://enrilemoine.com/wp-content/uploads/2014/12/IMG_7249.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.item4 {
+    background-image: url(https://www.recetaspanama.com/base/stock/Recipe/198-image/198-image_web.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* SECCION PORTFOLIO */
+.portfolio {
+    color: #bb8207;
+    padding: 50px 20px;
+    min-height: 100vh;
+}
+
+.portfolio .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.portfolio h2 {
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.portfolio .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portfolio .galeria .proyecto {
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.portfolio .galeria .proyecto img {
+    width: 100%;
+    display: block;
+}
+
+.portfolio .galeria .proyecto .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(28, 182, 152, .8), rgba(28, 182, 152, .8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+
+.portfolio .galeria .proyecto .overlay h3 {
+    margin-bottom: 20px;
+    transition: 1s;
+}
+
+.portfolio .galeria .proyecto .overlay:hover {
+    opacity: 1;
+}
+
+.portfolio .galeria .proyecto .overlay:hover h3 {
+    margin-bottom: 0px;
+}
